@@ -1,0 +1,28 @@
+server:
+  port: 8888
+
+spring:
+  appliation:
+    name: config-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native: # local
+          search-locations: file:///C:/Users/ASUS/IdeaProjects/native-file-repo
+        git: # git
+          uri: https://github.com/conkjh032/spring-cloud-config
+#          username:
+#          password:
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh

@@ -1,0 +1,6 @@
+encrypt:
+#  key: abcdefghijklmnopqrstuvwxyz0123456789 # 대칭키
+  key-store:
+    location: file:///C:/Users/ASUS/IdeaProjects/keystore/apiEncryptionKey.jks
+    password: 1q2w3e4r
+    alias: apiEncryptionKey
